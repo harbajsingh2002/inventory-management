@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background-image: url("../images/backgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 81%
+  }
+  
+  nav li {
+    margin-left: 20%;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    background-color:transparent; /* Semi-transparent white */
+    box-shadow: 2px 5px 20px 12px black;
+}
+
+/* Header */
+h1 {
+    margin-bottom: 30px;
+    color: #333; 
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px; 
+    margin: 10px auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d9534f; 
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-filter input[type="text"],
+.search-filter input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e0e0; 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        margin: 5px auto;
+    }
+}
